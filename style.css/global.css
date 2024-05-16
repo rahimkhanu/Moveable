@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+:root {
+    --heading: 'Outfit', sans-serif;
+    --main: "Roboto Condensed", sans-serif;
+    --btn: "Roboto", sans-serif;
+    --btns: "Poppins", sans-serif;
+    --bg-primary: black !important;
+}
+
+.main-container {
+    max-width: 1440px;
+    padding-inline: 12px;
+    margin: 0 auto;
+}
+
+/* ================
++++++++++++++
+Colors
+++++++++++++++
+================= */
+.brown-- {
+    background-color: #171D3F;
+}
+
+.green-- {
+    color: #12C143;
+}
+
+.black-- {
+    color: black;
+}
+
+.white-- {
+    color: white;
+}
+
+.darkgrey-- {
+    color: #5F6C7B;
+}
+
+.purple {
+    color: #5950AF;
+}
+
+/* +++++++++++++
+Style
+++++++++++++ */
+.align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.align-center-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+
+button {
+    font-family: var(--btn);
+}

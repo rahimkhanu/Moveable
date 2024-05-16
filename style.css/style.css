@@ -1,0 +1,10 @@
+@import url(global.css);
+@import url(typograpy.css);
+
+
+#hero{
+    height: 100vh;
+    background-image: url(../photo/hero\ photo.jpg);
+    background-position: center;
+    background-size: cover;    
+}
