@@ -14,7 +14,7 @@
 
 .main-container {
     max-width: 1440px;
-    width: 90%;
+    width: 80%;
     padding-inline: 12px;
     margin: 0 auto;
 }
@@ -44,8 +44,9 @@ Colors
     color:#524632;
 }
 
-.purple {
-    color: #5950AF;
+.red-- {
+    color: #E60023!important;
+    
 }
 
 /* +++++++++++++

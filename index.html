@@ -14,18 +14,18 @@
     <body>
         <header id="site-header">
             <div class="main-container d-flex justify-content-between ">
-                <div class="col-7 col-lg-5 col-xl-7">
+                <div class="col-7 col-lg-4 col-xl-5 col-xxl-6">
                     <div class="header-logo">
                         <a href="#">
                             <img src="photo/site-logo.svg" alt="">
                         </a>
                     </div>
                 </div>
-                <div class="col-5 col-lg-7 col-xl-5 ">
-                    <div class="nav-menus ">
+                <div class="col-5 col-lg-8 col-xl-7 col-xxl-6 d-lg-flex align-items-lg-center ">
+                    <div class="nav-menus  d-lg-flex gap-3 gap-xl-5">
                         <div class="nav-links">
                             <nav>
-                                <ul class="m-0 d-flex align-items-center justify-content-">
+                                <ul class="m-0">
                                     <li>
                                         <a href="#">HOME</a>
                                     </li>
@@ -42,14 +42,17 @@
                             </nav>
                         </div>
                         <div class="number">
-                            <a href="#"><span class="green--">+</span>123 456 7891011</a>
+                            <a href="#">
+                                <span class="green--">+</span>
+                                123 456 7891011
+                            </a>
                         </div>
                     </div>
                     <div class="float-end toogle" onclick="myFunction(this)">
                         <div class="bar1"></div>
                         <div class="bar2"></div>
                         <div class="bar3"></div>
-                      </div>
+                    </div>
                 </div>
                 <div class="toogle-menu-hidden ">
                     <div class="align-center-column px-4 py-3">
@@ -73,24 +76,91 @@
                             <a href="#">+123 456 7891011</a>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+    </header>
+    <!-- /* +++++++++++++
+Hero section
+++++++++++++ */ -->
+    <section id="hero">
+        <div class="main-container">
+            <div class="col-12 col-lg-7 col-xl-6 col-xxl-6">
+                <form class="form">
+                    <h1>
+                        MOVING MADE
+                        <span class="green--">EASY</span>
+                        FOR EVEYBODY!
+                    </h1>
+                    <P class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</P>
+                    <select class="round" aria-placeholder="HOME">
+                        <option>What are you moving?</option>
+                        <option>No external background image</option>
+                        <option>No wrapper</option>
+                    </select>
+                    <div class="d-flex flex-column flex-lg-row  gap-1 my-1">
+                        <input type="text" class="green" placeholder="Moving From">
+                        <input type="text" class="red" placeholder="Moving To">
                     </div>
-                </div>
-                <div class="overlay"></div>
+                    <div class="form-button pt-3">
+                        <button>INSTANT PRICES</button>
+                    </div>
+                </form>
             </div>
-            
-        </header>
-        <section id="hero">
-            <div class="main-container">
-                <div class="col-8">
-                    <form class="form">
-                        <h1>MOVING MADE EASY FOR EVEYBODY!</h1>
-                        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</P>
-                    </form>
+        </div>
+    </section>
+    <!--+++++++++++++
+     Section-2
+    ++++++++++++-->
+    <section id="section-2">
+        <div class="main-container ">
+            <div class="s2-logo d-flex align-items-center justify-content-center gap-3 gap-lg-4 flex-sm-column flex-lg-row">
+                <div class="d-flex gap-2">
+                    <img src="photo/covid19-lgo.svg" alt="covaid logo">
+                    <p class="content mb-0">Due to Covid-19 Lockdowns, our moving services could be affected.</p>
+                </div>
+                <div class="">
+                    <p class="Read-more mb-0 gap-2 gap-lg-4 pe-2">
+                        Read More
+                        <span class="green-line"></span>
+                    </p>
                 </div>
             </div>
-        </section>
-        <!-- script -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="script.js"></script>
-    </body>
+        </div>
+    </section>
+    <!--+++++++++++++
+     Section-3
+    ++++++++++++-->
+    <section id="section-3">
+        <div class="main-container d-flex flex-column flex-lg-row">
+            <div class="col-12 col-lg-6 photo-column ">
+                <div class="group-img position-relative w-100  ">
+                    <img src="photo/Group 1237.png " class="" width="100%">
+                    <div class="box position-absolute z-n1"></div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 content-column ">
+                <span class="small-content py-3 ">ABOUT US</span>
+                <h2>Your One Stop Solution To All Your Moving Porblems</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing sit amet, consectetur adipiscing sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <button class="mt-3 float-start">READ MORE</button>
+            </div>
+        </div>
+    </section>
+    <!--+++++++++++++
+    client-logos 
+    ++++++++++++-->
+    <section id="client-logos">
+        <div class="container">
+            <div class="logos">
+                <img src="photo/delolitte.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>

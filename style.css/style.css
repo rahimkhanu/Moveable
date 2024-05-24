@@ -2,7 +2,6 @@
 @import url(typograpy.css);
 
 
-
 /* +++++++++++++
     Header
 ++++++++++++ */
@@ -10,7 +9,8 @@
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 15px 0;
+    padding: 10px 0;
+    z-index: 9;
     border-bottom: .5px solid white;
 }
 
@@ -57,16 +57,167 @@
 Hero section
 ++++++++++++ */
 #hero {
-    height: 100vh;
+    min-height: calc(100vh - 65px);
     background-image: url(../photo/hero\ photo.jpg);
     background-position: center;
     background-size: cover;
-    padding-top: 60px;
+    padding: 90px 0 40px 0;
+    align-content: center;
 }
-.white{
+
+.white {
     background-color: #52463296;
-    border-bottom: .5px solid #52463296!important;
+    border-bottom: .5px solid #52463296 !important;
 }
+
+#hero .form {
+    background-color: rgba(82, 70, 50, 0.5);
+    padding: 40px 25px;
+}
+
+#hero .form select {
+    width: 100%;
+    padding: 10px 20px 10px 40px;
+    font-family: var(--btn);
+    font-size: clamp(10px, 4vw, 14px);
+    color: rgba(0, 0, 0, 0.6);
+    outline: thin #12c144;
+    border: thin solid black;
+    background-image: url(../photo/Vector\ 54.png);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: 95% 50%;
+    appearance: none;
+}
+
+#hero .form option {
+    font-family: var(--btn);
+    font-size: clamp(10px, 4vw, 14px);
+    color: rgba(0, 0, 0, 1);
+}
+
+#hero input {
+    width: 50%;
+    padding: 10px 20px 10px 40px;
+    font-family: var(--btn);
+    font-size: clamp(10px, 4vw, 14px);
+    border-radius: 0;
+    outline: thin #12c144;
+    border: thin solid rgba(0, 0, 0, 1);
+    background-size: 12px;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: 10% 50%;
+}
+
+.red {
+    background-image: url(../photo/red\ locatin\ vector.svg);
+}
+
+.green {
+    background-image: url(../photo/location.svg);
+}
+
+form button {
+    width: 100%;
+    font-family: var(--btn);
+    padding: 10px 20px 10px 40px;
+    font-size: clamp(10px, 4vw, 14px);
+    background-color: #12c144;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+}
+
+/* +++++++++++++
+  section-2
+++++++++++++ */
+#section-2 {
+    background-color: #524632;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.Read-more {
+    font-size: clamp(12px, 3vw, 17px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section-2 .content {
+    font-size: clamp(12px, 3vw, 17px);
+    font-weight: 400;
+
+}
+
+#section-2 .green-line {
+    height: 3px;
+    width: 70px;
+    background-color: #12c144;
+    border-radius: 10px;
+}
+
+/* +++++++++++++
+  section-3
+++++++++++++ */
+#section-3 {
+    padding: 20px 0;
+}
+
+.photo-column {
+    place-content: center;
+}
+
+.small-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(8px, 4vw, 12px);
+    font-weight: 700;
+    font-family: var(--main);
+}
+
+.content-column {
+    padding: 0 25px;
+}
+
+.content-column {}
+
+.content-column h2 {
+    font-weight: 700;
+}
+
+#section-3 p {
+    color: black;
+    font-weight: 400;
+}
+
+#section-3 button {
+    padding: 7px 45px;
+    background-color: transparent;
+    border: 2px solid #12c144;
+    font-size: clamp(12px, 4vw, 17px);
+    font-weight: 700;
+    transition: .2s all ease-in-out;
+}
+
+#section-3 button:hover {
+    background-color: #12c144;
+}
+
+#section-3 .box {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    background-color: #221e13ee;
+
+}
+
 
 
 
@@ -76,6 +227,39 @@ Responsiveness
 ++++++++++++ */
 
 
+
+@media only screen and (min-width: 1280px) {
+    .main-container {
+        max-width: 1440px;
+        width: 90%;
+        padding-inline: 12px;
+        margin: 0 auto;
+    }
+
+    #hero input {
+        padding: 10px 20px 10px 55px;
+    }
+
+    #hero .form select {
+        padding: 10px 20px 10px 55px;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .main-container {
+        max-width: 1440px;
+        width: 80%;
+        padding-inline: 12px;
+        margin: 0 auto;
+    }
+
+    .nav-menus {
+        display: block;
+    }
+
+
+}
 
 @media only screen and (max-width: 1023px) {
 
@@ -129,6 +313,7 @@ Responsiveness
         background-color: #524632d7;
         display: block;
         transition: all .5s linear;
+        overflow-y: auto;
     }
 
     .toogle-menu-hidden li {
@@ -142,32 +327,41 @@ Responsiveness
         background-color: #12c14444;
     }
 
-    .overlay {
-        position: fixed;
-        /* Sit on top of the page content */
-        display: none;
-        /* Hidden by default */
-        width: 100%;
-        /* Full width (cover the whole page) */
-        height: 100%;
-        /* Full height (cover the whole page) */
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        backdrop-filter: blur(5px);
-        /* Black background with opacity */
-        -webkit-filter: blur(5px);
-        z-index: -9;
-        /* Specify a stack order in case you're using a different order for other elements */
-        cursor: pointer;
-        /* Add a pointer on hover */
-    }
-
     .overlay-show {
         display: block;
     }
+
+    #hero input {
+        width: 100%;
+        background-position: 3% 50%;
+
+    }
+
 }
 
 
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+    .main-container {
+        max-width: 1440px;
+        width: 100%;
+        padding-inline: 12px;
+        margin: 0 auto;
+    }
+
+
+    #hero input {
+        padding: 10px 20px 10px 55px;
+    }
+
+    #hero .form select {
+        padding: 10px 20px 10px 55px;
+    }
+
+    /* +++++++++++++
+  section-3
+++++++++++++ */
+
+.content-column{
+    padding: 0 10px;
+}
+}
