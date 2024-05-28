@@ -140,7 +140,7 @@ form button {
     padding: 20px 0;
 }
 
-.Read-more {
+#section-2 .Read-more {
     font-size: clamp(12px, 3vw, 17px);
     display: flex;
     align-items: center;
@@ -184,7 +184,6 @@ form button {
     padding: 0 25px;
 }
 
-.content-column {}
 
 .content-column h2 {
     font-weight: 700;
@@ -218,6 +217,145 @@ form button {
 
 }
 
+/* <!--+++++++++++++
+    client-logos 
+    ++++++++++++--> */
+#client-logos {
+    padding: 50px 0;
+}
+
+#client-logos .logos img {
+    padding: 0 30px;
+}
+
+/* <!--+++++++++++++
+    services
+    ++++++++++++--> */
+#services {
+    padding: 50px 0;
+}
+#services .green-box{
+    max-width:70%;
+    width: 900px;
+    height: 100%;
+    background-color: #F3FEF6;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#services .small-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(6px, 4vw, 12px);
+    font-weight: 700;
+    font-family: var(--main);
+}
+
+#services .services-h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#services .h2-width{
+    max-width:310px ;
+    text-align: center;
+    font-weight: 700;
+}
+#services .p-width{
+    max-width:530px ;
+    text-align: center;
+    color: black;
+}
+#services .card{
+    max-width: 290px;
+    height: 390px;
+    border: none;
+    border-radius: 0;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; 
+}
+#services .card-title{
+    font-family:var(--main);
+    font-size: clamp(18px, 3vw, 25px);
+    font-weight: 700;
+}
+
+#services .card-group p{
+    color: black;
+}
+#services .green-line {
+    height: 3px;
+    width: 30px;
+    background-color: #12c144;
+    border-radius: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+#services .Read-more{
+    margin-top: auto;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0!important;
+    text-decoration: none;
+    color: black;
+    font-family: var(--main);
+}
+#services .ser-button{
+    padding: 10px 50px;
+    font-family: var(--btn);
+    font-size: 17px;
+    font-weight: 700;
+    background-color:#12C143;
+    border: 0;
+}
+
+/* <!--+++++++++++++
+     work section
+++++++++++++--> */
+#work{
+    padding: 50px 0;
+}
+#work .h2-width{
+    font-weight: 700;
+}
+.reviews{
+    font-size:clamp(24px, 4vw, 34px)!important;
+    width: 75%;
+    /* height: 60px; */
+    background-color: #524632;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #12C143;
+}
+#work span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 5px ;
+}
+#work h2{
+    font-size:clamp(25px, 3vw, 34px);
+
+}
+#work .reviews p{
+    font-size:14px;
+}
+/* <!--+++++++++++++
+    Testimonials
+    ++++++++++++--> */
+    #testimonials{
+        padding: 150px 0; 
+        clear: both;
+    }
 
 
 
@@ -231,6 +369,12 @@ Responsiveness
 @media only screen and (min-width: 1280px) {
     .main-container {
         max-width: 1440px;
+        width: 90%;
+        padding-inline: 12px;
+        margin: 0 auto;
+    }
+    .main-container-II{
+        max-width: 1920px;
         width: 90%;
         padding-inline: 12px;
         margin: 0 auto;
@@ -253,16 +397,33 @@ Responsiveness
         padding-inline: 12px;
         margin: 0 auto;
     }
-
+    .main-container-II {
+        max-width: 1920px;
+        width: 90%;
+        padding-inline: 12px;
+        margin: 0 auto;
+    }
     .nav-menus {
         display: block;
     }
+    #services .card{
+        max-width: 300px;
+        height: 400px;
+    }
+ 
+
 
 
 }
 
 @media only screen and (max-width: 1023px) {
 
+    .main-container {
+        max-width: 1440px;
+        width: 95%;
+        padding-inline: 12px;
+        margin: 0 auto;
+    }
     .bar1,
     .bar2,
     .bar3 {
@@ -337,11 +498,32 @@ Responsiveness
 
     }
 
+    #client-logos .logos img {
+        padding: 20px 0;
+    }
+    #services .card{
+        max-width: 290px;
+        height: 410px;
+    }
+    .reviews{
+        bottom: -75px;
+        width: 100%;
+    }
+    #work .reviews{
+        flex-direction:row;
+    }
+
 }
 
 
 @media only screen and (max-width: 767px) {
     .main-container {
+        max-width: 1440px;
+        width: 100%;
+        padding-inline: 12px;
+        margin: 0 auto;
+    }
+    .main-container-II {
         max-width: 1440px;
         width: 100%;
         padding-inline: 12px;
@@ -361,7 +543,18 @@ Responsiveness
   section-3
 ++++++++++++ */
 
-.content-column{
-    padding: 0 10px;
-}
+    .content-column {
+        padding: 0 10px;
+    }
+    #services .green-box{
+        display: none;
+    }
+    #work .reviews{
+        flex-direction: column;
+        bottom: -200px;
+    }
+    #work span{
+        padding: 10px 0;
+    }
+    
 }

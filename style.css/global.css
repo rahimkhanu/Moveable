@@ -18,6 +18,15 @@
     padding-inline: 12px;
     margin: 0 auto;
 }
+.main-container-II{
+    max-width: 1440px;
+    width: 80%;
+    padding-inline: 12px;
+    margin: 0 auto;
+}
+.container-fluid{
+    max-width: 1440px;
+}
 
 /* ================
 +++++++++++++
