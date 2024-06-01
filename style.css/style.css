@@ -317,7 +317,8 @@ form button {
 /* <!--+++++++++++++
      work section
 ++++++++++++--> */
-#work{
+{
+    #work{
     padding: 50px 0;
 }
 #work .h2-width{
@@ -348,6 +349,7 @@ form button {
 }
 #work .reviews p{
     font-size:14px;
+}
 }
 /* <!--+++++++++++++
     Testimonials

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Moveable</title>
+        <!-- ********bootstrap********** -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="style.css/style.css">
+    </head>
+    <body>
+        <header id="site-header">
+            <div class="main-container d-flex justify-content-between ">
+                <div class="col-7 col-lg-4 col-xl-5 col-xxl-6">
+                    <div class="header-logo">
+                        <a href="#">
+                            <img src="photo/site-logo.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-5 col-lg-8 col-xl-7 col-xxl-6 d-lg-flex align-items-lg-center ">
+                    <div class="nav-menus  d-lg-flex gap-3 gap-xl-5">
+                        <div class="nav-links">
+                            <nav>
+                                <ul class="m-0">
+                                    <li>
+                                        <a href="#">HOME</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">ABOUT</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">SERVICES</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">CONTACT US</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="number">
+                            <a href="#">
+                                <span class="green--">+</span>
+                                123 456 7891011
+                            </a>
+                        </div>
+                    </div>
+                    <div class="float-end toogle" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+                <div class="toogle-menu-hidden ">
+                    <div class="align-center-column px-4 py-3">
+                        <nav class="w-100">
+                            <ul class="p-0">
+                                <li>
+                                    <a href="#">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="#">ABOUT</a>
+                                </li>
+                                <li>
+                                    <a href="#">SERVICES</a>
+                                </li>
+                                <li>
+                                    <a href="#">CONTACT US</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="number">
+                            <a href="#">+123 456 7891011</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+    </header>
+    <!-- +++++++++++++
+Hero section
+++++++++++++ -->
+<section id="hero" class="hero-height">
+    <div class="main-container">
+        <div class="col-12 col-lg-7 col-xl-6 col-xxl-6">
+            <form class="form">
+                <h1>
+                    MOVING MADE
+                    <span class="green--">EASY</span>
+                    FOR EVEYBODY!
+                </h1>
+                <P class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</P>
+                <select class="round" aria-placeholder="HOME">
+                    <option>What are you moving?</option>
+                    <option>No external background image</option>
+                    <option>No wrapper</option>
+                </select>
+                <div class="d-flex flex-column flex-lg-row  gap-1 my-1">
+                    <input type="text" class="green" placeholder="Moving From">
+                    <input type="text" class="red" placeholder="Moving To">
+                </div>
+                <div class="form-button pt-3">
+                    <button>INSTANT PRICES</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
