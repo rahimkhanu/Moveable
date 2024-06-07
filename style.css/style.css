@@ -270,11 +270,14 @@ form button {
     color: black;
 }
 #services .card{
+    flex: 1 0 0%;
     max-width: 290px;
     height: 390px;
     border: none;
     border-radius: 0;
+    padding: 0;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; 
+    
 }
 #services .card-title{
     font-family:var(--main);
@@ -282,7 +285,7 @@ form button {
     font-weight: 700;
 }
 
-#services .card-group p{
+#services .card p{
     color: black;
 }
 #services .green-line {
@@ -317,7 +320,6 @@ form button {
 /* <!--+++++++++++++
      work section
 ++++++++++++--> */
-{
     #work{
     padding: 50px 0;
 }
@@ -349,7 +351,6 @@ form button {
 }
 #work .reviews p{
     font-size:14px;
-}
 }
 /* <!--+++++++++++++
     Testimonials
@@ -481,6 +482,157 @@ form button {
 
 
 
+/* +++++++++++++
+About Us Page
+++++++++++++ */
+.hero-height{
+    min-height: calc(70vh - 65px)!important;
+    background-image: url(../photo/page-hero-section.jpg)!important;
+    background-position: center;
+    background-size: cover;
+    padding: 90px 0 40px 0;
+    align-content: center;
+}
+.abuot-us{
+    max-width: 50%;
+    width: 40%;
+    height: 20%;
+    background-color:#52463279;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding:35px 0; 
+}
+.page-2-reviews{
+    font-size:clamp(24px, 4vw, 34px)!important;
+    width: 75%;
+    background-color: #524632;
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #12C143;
+}
+.page-2-reviews span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 5px ;
+}  
+/* +++++++++++++
+About section
+++++++++++++ */
+#about{
+    padding: 100px 0 ;
+} 
+.img-group{
+    
+}
+#about .box {
+    top: calc(50% - 10px);
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 70%;
+    height: 80%;
+    border: 5px solid #18E551;
+
+}
+
+/* <!--++++++++++++++++++
+     TRANSPOTATION
++++++++++++++++++ --> */
+#transportation{
+    
+}
+#transportation h3,h2{
+font-weight: 700;    
+}
+
+/* +++++++++++++
+CLIENTLE
+++++++++++++ */
+#clientle{
+    padding: 100px 0;    
+}
+#clientle .logos {
+    padding: 50px 0;
+}
+#clientle .logos img {
+    padding: 0 30px;
+}
+#clientle .logo-bg{
+    background-color:#F3FEF6 ;
+}
+.testimonial-2{
+    padding: 20px 0 120px 0!important;
+}
+
+/* +++++++++++++
+Services page
+++++++++++++ */
+.service-height{
+        min-height: calc(70vh - 65px)!important;
+        background-image: url(../photo/services-bg-img.jpg)!important;
+        background-position: center;
+        background-size: cover;
+        padding: 90px 0 40px 0;
+        align-content: center;
+}
+
+/* +++++++++++++
+Our Process
+++++++++++++ */
+#process{
+    padding:100px 0;
+   background-color: #F3FEF6;
+    box-shadow: rgba(0, 0, 0, 0.15);
+}
+#process .step-heading{
+    font-size:clamp(17px , 4vw, 30px) ;
+    color:#34E867;
+    font-weight: 700;
+    font-family: var(--main);
+    background-color: #524632;
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    transform: translate(14px, -16px);
+}
+#process .step-heading .size{
+    font-size:clamp(24px , 4vw,45px) ;
+}
+#process .label-card{
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;}
+#process h3{
+    font-weight: 700;
+}
+
+/* +++++++++++++
+WE ARE SPECIAL
+++++++++++++ */
+#special{
+    padding: 100px 0;
+}
+#special .features-card{
+    border: 3px solid black;
+    padding: 0px 10px 10px 10px;
+    text-align: center;
+}
+#special h5{
+    font-family: var(--main);
+    font-weight: 700;
+    font-size: clamp(12px, 4vw, 18px);
+    text-transform: capitalize;
+}
+#special .card-logo{
+    transform: translate(0, -40px);
+    margin-bottom: -20px;
+
+}
 
 
 /* +++++++++++++
@@ -489,6 +641,16 @@ Responsiveness
 
 
 
+@media only screen and (min-width: 1440px) {
+    .abuot-us{
+        width: 70%;
+        padding:80px 0;
+    }
+    .page-2-reviews{
+        width: 57%;
+    }
+    
+}
 @media only screen and (min-width: 1280px) {
     .main-container {
         max-width: 1440px;
@@ -510,6 +672,11 @@ Responsiveness
     #hero .form select {
         padding: 10px 20px 10px 55px;
     }
+    .abuot-us{
+        width: 45%;
+        padding:40px 0;
+    }
+   
  
 }
 
@@ -644,6 +811,14 @@ Responsiveness
     #testimonials .card{
         padding: 15px 15px;
     }
+    #clientle .logos img {
+        padding: 10px 16px;
+    }
+    #process .step-heading {
+    font-size: clamp(17px , 3vw, 30px);
+    padding:0 12px;
+    transform: translate(0, 0);
+}
 
 }
 
@@ -685,7 +860,12 @@ Responsiveness
         flex-direction: column;
         bottom: -200px;
     }
-    #work span{
+    .page-2-reviews{
+        flex-direction: column;
+        bottom: 0;
+        width: 100%;
+    }
+    .page-2-reviews span{
         padding: 10px 0;
     }
     #testimonials .testimonials-p{
@@ -697,5 +877,15 @@ Responsiveness
     #testimonials .card{
     padding: 30px 15px;
     }
-    
+    .abuot-us{
+        max-width: 60%;
+        width: 60%;
+        padding: 25px;
+    }.hero-height{
+        min-height: calc(80vh - 65px)!important;
+    }
+    #process .step-heading{
+        transform: translate( 0, 0);
+        padding: 0px 15px;
+    }
 }

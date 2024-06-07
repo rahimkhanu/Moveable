@@ -19,9 +19,10 @@ h3 {
     font-size: clamp(18px, 8vw, 25px);
     font-family: var(--main);
 }
+
 p{
   font-size: clamp(8px ,4vw, 15px);
   font-family: var(--btn);
-  font-weight: 400px;  
+  font-weight: 400;  
   color: white;
 }
