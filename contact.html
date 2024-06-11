@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Moveable</title>
+        <!-- ********bootstrap********** -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="style.css/style.css">
+    </head>
+    <body>
+        <header id="site-header">
+            <div class="main-container d-flex justify-content-between ">
+                <div class="col-7 col-lg-4 col-xl-5 col-xxl-6">
+                    <div class="header-logo">
+                        <a href="#">
+                            <img src="photo/site-logo.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-5 col-lg-8 col-xl-7 col-xxl-6 d-lg-flex align-items-lg-center ">
+                    <div class="nav-menus  d-lg-flex gap-3 gap-xl-5">
+                        <div class="nav-links">
+                            <nav>
+                                <ul class="m-0">
+                                    <li>
+                                        <a href="index.html">HOME</a>
+                                    </li>
+                                    <li>
+                                        <a href="About.html">ABOUT</a>
+                                    </li>
+                                    <li>
+                                        <a href="services.html">SERVICES</a>
+                                    </li>
+                                    <li>
+                                        <a class="active" href="contact.html">CONTACT US</a>
+                                    </li>
+                                </ul>
+
+                            </nav>
+                        </div>
+                        <div class="number">
+                            <a href="#">
+                                <span class="green--">+</span>
+                                123 456 7891011
+                            </a>
+                        </div>
+                    </div>
+                    <div class="float-end toogle" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+                <div class="toogle-menu-hidden ">
+                    <div class="align-center-column px-4 py-3">
+                        <nav class="w-100">
+                            <ul class="p-0">
+                                <li>
+                                    <a href="index.html">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="About.html">ABOUT</a>
+                                </li>
+                                <li>
+                                    <a href="services.html">SERVICES</a>
+                                </li>
+                                <li >
+                                    <a class="active" href="contact.html">CONTACT US</a>
+                                </li>
+                        </nav>
+                        <div class="number">
+                            <a href="#">+123 456 7891011</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+    </header>
+    <!-- ++++++++++
+Hero section
+++++++++ -->
+    <section id="hero" class="contact-height">
+        <div class="main-container">
+            <div class="abuot-us text-uppercase">
+                <h1>CONTACT US</h1>
+            </div>
+        </div>
+    </section>
+    <!--++++++++++
+CONTACT-SECTON-2
+++++++++++++++ -->
+    <section id="contact-section-2">
+        <div class="main-container">
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="col-12 col-md-4 text-center">
+                    <h2 class="h2-width">
+                        Get In Touch
+                    </h2>
+                    <!-- Ul -->
+                    <div class="links  text-center text-md-start">
+                        <ul class="p-0 text-center">
+                            <li>
+                                <a href="#">Address:  Lorem Ipsum Dolor Sit Amet Dummy Text</a>
+                            </li>
+                            <li>
+                                <a href="#">Phone:  +971 50 123 4567</a>
+                            </li>
+                            <li>
+                                <a href="#">Email:  service@movable.com</a>
+                            </li>
+                            <div class="social-logo gap-2 d-flex align-items-sm-center justify-content-center justify-content-md-center pt-2">
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook "></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form d-flex flex-column flex-md-row  gap-4 gap-md-4 mt-5">
+                <div class="col-12 col-md-6">
+                    <input
+                        type="text"
+                        id="fname"
+                        name="fname"
+                        placeholder="enter your name"
+                    >
+                    <input
+                        type="text"
+                        id="lname"
+                        name="email"
+                        placeholder="enter your email"
+                    >
+                    <select class="round" aria-placeholder="HOME">
+                        <option>What are you moving?</option>
+                        <option>No external background image</option>
+                        <option>No wrapper</option>
+                    </select>
+                    <textarea rows="4" placeholder="type your message"></textarea>
+                    <div class="form-button pt-3">
+                        <button>SUBMIT</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9269.825064558298!2d72.35559756090453!3d34.77125613985683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dc22b64bb3a4e9%3A0xa4b234bf5e20c97c!2sMingora%2C%20Swat%2C%20Khyber%20Pakhtunkhwa%2C%20Pakistan!5e0!3m2!1sen!2s!4v1718021035889!5m2!1sen!2s"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="map"
+                    ></iframe>
+                </div>
+            </form>
+        </div>
+    </section>
+       <!--+++++++++++++
+    TESTTIMONIALS
+    ++++++++++++-->
+<section id="testimonials">
+    <div class="main-container">
+        <span class="small-content py-3 ">TESTTIMONIALS</span>
+        <div class="testimonials-h2 ">
+            <h2 class="">
+                Our customers Love Us
+            </h2>
+            <p class="testimonials-p black--">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                         Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+            <div class="cards-div flex-column flex-md-row">
+                <div class="card">
+                    <p class="black--">“Lorem ipsum dolor sit amet, consectetur adipiscing sit amet, consectetur adipiscing sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+                    <div class="img">
+                        <img src="photo/card-imge-1.png" width="90%">
+                    </div>
+                    <h5 class="my-1">JUDE LAW</h5>
+                    <h6>BUSINESS CONSULTANT</h6>
+                </div>
+                <div class="card">
+                    <p class="black--">“Lorem ipsum dolor sit amet, consectetur adipiscing sit amet, consectetur adipiscing sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+                    <div class="img">
+                        <img src="photo/card-img-2.png" width="90%">
+                    </div>
+                    <h5 class="my-1">BOSTON WASHINGTON</h5>
+                    <h6>LAWYER</h6>
+                </div>
+                <div class="card">
+                    <p class="black--">“Lorem ipsum dolor sit amet, consectetur adipiscing sit amet, consectetur adipiscing sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+                    <div class="img">
+                        <img src="photo/card-img-3.png" width="90%">
+                    </div>
+                    <h5 class="my-1">CEO OF BUSINESS</h5>
+                    <h6>LAWYER</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--+++++++++++++
+           Footer
+        ++++++++++++-->
+        <footer id="footer">
+            <div class="main-container">
+                <!-- main-row -->
+                <div class="row row-1">
+                    <!-- main-column -->
+                    <div class="col-md-7 col-12 pe-md-5">
+                        <span class="small-content py-3 white--">ABOUT US</span>
+                        <div class="testimonials-h2 ">
+                            <h2 class="white--">
+                                Our customers Love Us
+                            </h2>
+                            <p class="testimonials-p ">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                         Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- main-column -->
+                    <div class="col-md-5 col-12">
+                        <input type="text" placeholder="Your Email Address" class="footer-input mt-5">
+                        <button class="mt-3">SUBSCRIBE</button>
+                    </div>
+                </div>
+                <!-- main-row-2 -->
+                <div class="row row-2">
+                    <!-- main-row-2  main-column-1 -->
+                    <div class="col-md-7 col-12 ">
+                        <!-- Nested row -->
+                        <div class="row">
+                            <!-- Nested-column-->
+                            <div class="col-md-9 col-12 text-center text-md-start">
+                                <div class="footer-logo py-4  ">
+                                    <img src="photo/site-logo.svg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing sit amet, consectetur adipiscing sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <!-- Nested-column-->
+                            <div class="col-md-3 col-12">
+                                <div class="links text-center text-md-start">
+                                    <h5 class="py-md-4 pb-0 pt-5">LINKS</h5>
+                                    <ul class="p-0">
+                                        <li>
+                                            <a href="index.html">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="About.html">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="services.html">Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- main-row-2  main-column-2 -->
+                    <div class="col-md-5 col-12">
+                        <!-- Nested-row-->
+                        <div class="row">
+                            <!-- Nested-column-->
+                            <div class="col-md-5 col-12">
+                                <div class="links  text-center text-md-start">
+                                    <h5 class="py-md-4 pb-0 pt-5">SERVICES</h5>
+                                    <ul class="p-0">
+                                        <li>
+                                            <a href="#">Packing Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Piano Removals</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Cleaning Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Packing Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">View More...</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Nested-Column-->
+                            <div class="col-md-7 col-12">
+                                <div class="links  text-center text-md-start">
+                                    <h5 class="py-md-4 pb-0 pt-5">CONTACT INFO</h5>
+                                    <ul class="p-0">
+                                        <li>
+                                            <a href="#">Address:  Lorem Ipsum Dolor Sit Amet Dummy Text</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Phone:  +123 4567 89</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Email:service@movable.com</a>
+                                        </li>
+                                        <div class="social-logo gap-2 d-flex align-items-sm-center justify-content-center justify-content-md-start">
+                                            <a href="#"><i class="fa-brands fa-facebook "></i></a>
+                                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="separater white--">
+                    <div class="copywrite w-100 "><p>Copyright to 2022 Movable. All rights reserved. <span>Privacy Policy</span></p></div>
+                </div>
+            </div>
+        </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
