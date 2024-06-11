@@ -84,3 +84,6 @@ Style
 button {
     font-family: var(--btn);
 }
+.active{
+    border-bottom:2px solid #12C143;
+}

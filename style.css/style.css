@@ -22,6 +22,7 @@
 }
 
 .nav-links a {
+    padding: 5px 0;
     color: white;
     text-decoration: none;
     font-size: 13px;
@@ -213,19 +214,18 @@ form button {
     transform: translate(-50%, -50%);
     width: 70%;
     height: 70%;
-    background-color: #221e13ee;
-
+    background: #221E130D;
 }
 
 /* <!--+++++++++++++
     client-logos 
     ++++++++++++--> */
 #client-logos {
-    padding: 50px 0;
+    padding: 60px 0;
 }
 
 #client-logos .logos img {
-    padding: 0 30px;
+    /* padding: 0 30px; */
 }
 
 /* <!--+++++++++++++
@@ -287,11 +287,12 @@ form button {
 
 #services .card p{
     color: black;
+    font-family: var(--main );
 }
 #services .green-line {
     height: 3px;
-    width: 30px;
-    background-color: #12c144;
+    width: 60px;
+    background-color: #18E551;
     border-radius: 10px;
     display: flex;
     justify-content: end;
@@ -321,7 +322,7 @@ form button {
      work section
 ++++++++++++--> */
     #work{
-    padding: 50px 0;
+    padding: 80px 0;
 }
 #work .h2-width{
     font-weight: 700;
@@ -495,7 +496,7 @@ About Us Page
 }
 .abuot-us{
     max-width: 50%;
-    width: 40%;
+    width: 45%;
     height: 20%;
     background-color:#52463279;
     display: flex;
@@ -559,7 +560,7 @@ CLIENTLE
     padding: 100px 0;    
 }
 #clientle .logos {
-    padding: 50px 0;
+    padding: 50px 50px;
 }
 #clientle .logos img {
     padding: 0 30px;
@@ -570,6 +571,9 @@ CLIENTLE
 .testimonial-2{
     padding: 20px 0 120px 0!important;
 }
+#clientle .h2-width{
+    text-transform: capitalize;
+}
 
 /* +++++++++++++
 Services page
@@ -579,7 +583,7 @@ Services page
         background-image: url(../photo/services-bg-img.jpg)!important;
         background-position: center;
         background-size: cover;
-        padding: 90px 0 40px 0;
+        padding: 90px 0 60px 0;
         align-content: center;
 }
 
@@ -587,8 +591,8 @@ Services page
 Our Process
 ++++++++++++ */
 #process{
-    padding:100px 0;
-   background-color: #F3FEF6;
+    padding:80px 0;
+   background-color:#e5ffec;
     box-shadow: rgba(0, 0, 0, 0.15);
 }
 #process .step-heading{
@@ -615,10 +619,10 @@ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;}
 WE ARE SPECIAL
 ++++++++++++ */
 #special{
-    padding: 100px 0;
+    padding-top: 100px;
 }
 #special .features-card{
-    border: 3px solid black;
+    border: 3px solid #524632;
     padding: 0px 10px 10px 10px;
     text-align: center;
 }
@@ -634,6 +638,101 @@ WE ARE SPECIAL
 
 }
 
+/* +++++++++++++
+CONTACT
+++++++++++++ */
+.contact-height{
+    min-height: calc(70vh - 65px)!important;
+    background-image: url(../photo/contact.jpg)!important;
+    background-position: center;
+    background-size: cover;
+    padding: 90px 0 40px 0;
+    align-content: center;
+}
+
+#contact-section-2{
+    padding: 100px 0 50px 0;
+}
+#contact-section-2 .links li{
+    list-style-type: none;
+    text-decoration: none;
+    padding-top: 5px;
+}
+#contact-section-2 .links a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    font-family: var(--main);
+
+}
+ 
+#contact-section-2 .social-logo i{
+    margin-top: 3px;
+    width: 20px;
+    height:20px;
+    font-size: 10px;
+    background-color: #524632;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact-section-2 input{
+    width: 100%;
+    padding: 10px 20px;
+    font-family: var(--btn);
+    font-size: clamp(10px, 4vw, 13px);
+    border-radius: 0;
+    border: 1px solid rgba(0, 0, 0, 0.507);
+    background-size: 12px;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    margin-bottom: 10px;
+    background-position: 10% 50%;
+    text-transform: capitalize;
+}
+#contact-section-2 select{
+    width: 100%;
+    padding: 10px 20px;
+    font-family: var(--btn);
+    font-size: clamp(10px, 4vw, 14px);
+    color: rgba(0, 0, 0, 0.6);
+    border: thin solid rgba(0, 0, 0, 0.507);
+    background-image: url(../photo/Vector\ 54.png);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: 95% 50%;
+    appearance: none;
+}
+#contact-section-2 textarea{
+    width: 100%;
+    padding: 10px 20px;
+    font-family: var(--btn);
+    font-size:14px;
+    color:black;
+    border: thin solid rgba(0, 0, 0, 0.507);
+    margin-top: 10px;
+    text-transform: capitalize;
+
+}
+textarea:focus, input:focus , select:focus{
+    outline: 1px solid #12c144;
+}
+#contact-section-2 button{
+    width: 100%;
+    font-family: var(--btn);
+    padding: 10px 20px 10px 40px;
+    font-size: clamp(10px, 4vw, 14px);
+    background-color: #12c144;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+}
+#contact-section-2 .map{
+    min-height: 300px;
+}
+
 
 /* +++++++++++++
 Responsiveness
@@ -647,9 +746,13 @@ Responsiveness
         padding:80px 0;
     }
     .page-2-reviews{
-        width: 57%;
+        width: 73%;
     }
-    
+    .container{
+        max-width: 1440px;
+    }
+   
+
 }
 @media only screen and (min-width: 1280px) {
     .main-container {
@@ -664,6 +767,9 @@ Responsiveness
         padding-inline: 12px;
         margin: 0 auto;
     }
+    .container{
+        max-width: 70%;
+    }
 
     #hero input {
         padding: 10px 20px 10px 55px;
@@ -673,8 +779,15 @@ Responsiveness
         padding: 10px 20px 10px 55px;
     }
     .abuot-us{
-        width: 45%;
+
         padding:40px 0;
+    }
+    #testimonials .testimonials-p {
+        width: 65%!important;
+        text-align: center;
+    }
+    #footer .small-content{
+        width: 50%;
     }
    
  
@@ -694,6 +807,9 @@ Responsiveness
         padding-inline: 12px;
         margin: 0 auto;
     }
+    .container{
+        max-width: 70%;
+    }
     .nav-menus {
         display: block;
     }
@@ -701,7 +817,10 @@ Responsiveness
         max-width: 300px;
         height: 400px;
     }
-
+    #testimonials .testimonials-p {
+        width: 75%;
+        text-align: center;
+    }
  
 
 
@@ -795,7 +914,12 @@ Responsiveness
     }
     #services .card{
         max-width: 290px;
-        height: 410px;
+        height: 380px;
+    }
+    #services .p-width {
+        max-width: 515px;
+        text-align: center;
+        color: black;
     }
     .reviews{
         bottom: -75px;
@@ -810,6 +934,10 @@ Responsiveness
     }
     #testimonials .card{
         padding: 15px 15px;
+    }
+    #testimonials .testimonials-p {
+        width: 87%;
+        text-align: center;
     }
     #clientle .logos img {
         padding: 10px 16px;
@@ -856,20 +984,30 @@ Responsiveness
     #services .green-box{
         display: none;
     }
+    #services .card {
+        max-width: 100%;
+        height: 375px;
+    }
     #work .reviews{
         flex-direction: column;
         bottom: -200px;
     }
+    #work span{
+        padding: 10px 10px;
+    }
     .page-2-reviews{
         flex-direction: column;
-        bottom: 0;
+        bottom: 52px;
         width: 100%;
+    }
+    #about{
+        padding:150px 0;
     }
     .page-2-reviews span{
         padding: 10px 0;
     }
     #testimonials .testimonials-p{
-        width: 90%;
+        width: 100%;
     }
     #testimonials .cards-div{
     padding: 10px 5px;
@@ -877,11 +1015,13 @@ Responsiveness
     #testimonials .card{
     padding: 30px 15px;
     }
-    .abuot-us{
-        max-width: 60%;
-        width: 60%;
-        padding: 25px;
-    }.hero-height{
+    .abuot-us {
+        max-width: 70%;
+        width: 70%;
+        padding: 25px 10px;
+    }
+    
+    .hero-height{
         min-height: calc(80vh - 65px)!important;
     }
     #process .step-heading{
