@@ -22,7 +22,7 @@ h3 {
 
 p{
   font-size: clamp(8px ,4vw, 15px);
-  font-family: var(--btn);
+  font-family: var(--main);
   font-weight: 400;  
   color: white;
 }

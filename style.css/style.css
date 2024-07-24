@@ -78,7 +78,7 @@ Hero section
 
 #hero .form select {
     width: 100%;
-    padding: 10px 20px 10px 40px;
+    padding: 15px 20px 15px 40px;
     font-family: var(--btn);
     font-size: clamp(10px, 4vw, 14px);
     color: rgba(0, 0, 0, 0.6);
@@ -100,8 +100,6 @@ Hero section
 #hero input {
     width: 50%;
     padding: 10px 20px 10px 40px;
-    font-family: var(--btn);
-    font-size: clamp(10px, 4vw, 14px);
     border-radius: 0;
     outline: thin #12c144;
     border: thin solid rgba(0, 0, 0, 1);
@@ -109,15 +107,54 @@ Hero section
     background-repeat: no-repeat;
     object-fit: contain;
     background-position: 10% 50%;
+} 
+#hero .select2.select2-container{
+    height: 100%;
 }
-
-.red {
-    background-image: url(../photo/red\ locatin\ vector.svg);
+#hero .select2.select2-container > .selection > .select2-selection{
+    background-size: 12px;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: 20px 50%;
+    height: 100%;   
+    color:rgba(0, 0, 0, .6) ;
 }
-
-.green {
+#hero .green > .select2.select2-container > .selection > .select2-selection{
     background-image: url(../photo/location.svg);
+   
 }
+#hero .red > .select2.select2-container > .selection > .select2-selection{
+    background-image: url(../photo/red\ locatin\ vector.svg);
+    border-radius: 0!important;
+   
+}
+#hero .select2.select2-container > .selection > .select2-selection > .select2-selection__rendered{
+    padding: 10px 20px 10px 40px;
+    font-family: var(--main);
+    font-size:14px; 
+    color:rgba(0, 0, 0, .6) ;
+}
+/* .select2-container--default .select2-results>.select2-results__options{
+    background-color: #524632ee;
+} */
+.select2-container--default .select2-results>.select2-results__options >li:hover{
+    background-color: #524632;
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable{
+    background-color: #524632;
+}
+
+.select2-selection__arrow{
+    display: none;
+}
+
+/* #hero select.green {
+    background-image: url(../photo/location.svg);
+    background-size: 12px;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: 8% 50%;
+} */
 
 form button {
     width: 100%;
@@ -127,8 +164,19 @@ form button {
     background-color: #12c144;
     font-size: 15px;
     font-weight: 700;
-    border: none;
+    border: 2px solid #12C143;
+    transition: all .2s ease-in-out;
 }
+.form button:hover{
+    background-color: transparent;
+    border: 2px solid #12C143;
+    color: white;
+    padding: 10px 20px 10px 40px;
+}
+#hero .form select , #hero .form input{
+    font-family: var(--main);
+}
+
 
 /* +++++++++++++
   section-2
@@ -147,6 +195,14 @@ form button {
     align-items: center;
     justify-content: center;
 }
+#section-2 .Read-more a{
+    text-decoration: none;
+    color: white;
+}
+#section-2 .Read-more a:hover{
+color: #12C143;
+}
+
 
 #section-2 .content {
     font-size: clamp(12px, 3vw, 17px);
@@ -165,7 +221,7 @@ form button {
   section-3
 ++++++++++++ */
 #section-3 {
-    padding: 20px 0;
+    padding: 100px 0;
 }
 
 .photo-column {
@@ -221,18 +277,16 @@ form button {
     client-logos 
     ++++++++++++--> */
 #client-logos {
-    padding: 60px 0;
+    padding: 100px 0;
 }
 
-#client-logos .logos img {
-    /* padding: 0 30px; */
-}
+
 
 /* <!--+++++++++++++
     services
     ++++++++++++--> */
 #services {
-    padding: 50px 0;
+    padding: 100px 0;
 }
 #services .green-box{
     max-width:70%;
@@ -284,6 +338,10 @@ form button {
     font-size: clamp(18px, 3vw, 25px);
     font-weight: 700;
 }
+#services .card-title a{
+    text-decoration: none;
+    color: black;
+}
 
 #services .card p{
     color: black;
@@ -309,6 +367,9 @@ form button {
     color: black;
     font-family: var(--main);
 }
+#services .Read-more:hover{
+    color: #12C143;
+}
 #services .ser-button{
     padding: 10px 50px;
     font-family: var(--btn);
@@ -317,12 +378,17 @@ form button {
     background-color:#12C143;
     border: 0;
 }
+#services .ser-button:hover{
+    background-color: transparent;
+    border: 2px solid #12C143;
+     
+}
 
 /* <!--+++++++++++++
      work section
 ++++++++++++--> */
     #work{
-    padding: 80px 0;
+    padding: 120px 0;
 }
 #work .h2-width{
     font-weight: 700;
@@ -351,7 +417,8 @@ form button {
 
 }
 #work .reviews p{
-    font-size:14px;
+    font-size: clamp(12px, 3vw, 16px);
+    font-family: var(--btn);
 }
 /* <!--+++++++++++++
     Testimonials
@@ -394,8 +461,8 @@ form button {
 
     }
     #testimonials .card p{
-        font-size: 12px;
-        text-align: center;
+        font-size: 15px;
+        text-align: center;   
     }
     #testimonials .card h5{
         font-size: clamp(10px , 4vw, 15px);
@@ -414,7 +481,7 @@ form button {
          Footer
     ++++++++++++--> */
     #footer{
-        padding: 150px 0 50px 0;
+        padding: 150px 0 80px 0;
         background-color: #524632;
     }
     #footer .footer-input{
@@ -424,7 +491,7 @@ form button {
         outline:#524632;
         border: 1px solid black;
         font-size: 14px;
-        font-family: var(--btn);
+        font-family: var(--main);
     }
     #footer button{
      width: 100%;
@@ -432,6 +499,10 @@ form button {
      background-color: #12C143;   
      border: 0;
      font-weight: 700;
+    }
+    #footer button:hover{
+        background-color: transparent;
+        border: 2px solid #12C143;
     }
     #footer .row-2{
         padding:80px 0 0px 0;
@@ -453,6 +524,9 @@ form button {
         font-weight: 700;
 
     }
+    #footer .links a:hover{
+        color: #12C143;
+    }
      
     #footer .social-logo i{
         margin-top: 3px;
@@ -465,6 +539,9 @@ form button {
         align-items: center;
         justify-content: center;
     }
+    #footer .social-logo i:hover{
+        background-color: #12C143;
+    }
     .separater{
         width: 97%;
         margin: 0  auto 21px auto;
@@ -476,9 +553,16 @@ form button {
     #footer .copywrite p{
         font-size: 14px!important;
         font-weight: 400px;
+        font-family: var(--btn);
     }
     #footer .copywrite span{
         color: #12C143;
+    }
+    #footer .copywrite a {
+        text-decoration: none;
+    }
+    #footer .copywrite span:hover{
+        color:white;
     }
 
 
@@ -488,7 +572,8 @@ About Us Page
 ++++++++++++ */
 .hero-height{
     min-height: calc(70vh - 65px)!important;
-    background-image: url(../photo/page-hero-section.jpg)!important;
+    background: url(../photo/page-hero-section.jpg),  rgba(0, 0, 0, 0.3)!important;
+    background-blend-mode: overlay;
     background-position: center;
     background-size: cover;
     padding: 90px 0 40px 0;
@@ -530,9 +615,6 @@ About section
 #about{
     padding: 100px 0 ;
 } 
-.img-group{
-    
-}
 #about .box {
     top: calc(50% - 10px);
     left: 50%;
@@ -580,7 +662,8 @@ Services page
 ++++++++++++ */
 .service-height{
         min-height: calc(70vh - 65px)!important;
-        background-image: url(../photo/services-bg-img.jpg)!important;
+        background: url(../photo/services-bg-img.jpg), rgba(0, 0, 0, 0.3)!important;
+        background-blend-mode: overlay;
         background-position: center;
         background-size: cover;
         padding: 90px 0 60px 0;
@@ -643,7 +726,8 @@ CONTACT
 ++++++++++++ */
 .contact-height{
     min-height: calc(70vh - 65px)!important;
-    background-image: url(../photo/contact.jpg)!important;
+    background: url(../photo/contact.jpg) ,rgba(0, 0, 0, 0.3)!important;
+    background-blend-mode: overlay;
     background-position: center;
     background-size: cover;
     padding: 90px 0 40px 0;
@@ -772,11 +856,11 @@ Responsiveness
     }
 
     #hero input {
-        padding: 10px 20px 10px 55px;
+        padding: 15px 20px 15px 55px;
     }
 
     #hero .form select {
-        padding: 10px 20px 10px 55px;
+        padding: 15px 20px 15px 40px;
     }
     .abuot-us{
 
@@ -967,12 +1051,12 @@ Responsiveness
 
 
     #hero input {
-        padding: 10px 20px 10px 55px;
+        padding: 15px 20px 15px 55px;
     }
 
-    #hero .form select {
-        padding: 10px 20px 10px 55px;
-    }
+    /* #hero .form select {
+        padding: 15px 20px 15px 55px;
+    } */
 
     /* +++++++++++++
   section-3
@@ -986,7 +1070,7 @@ Responsiveness
     }
     #services .card {
         max-width: 100%;
-        height: 375px;
+        height:400px;
     }
     #work .reviews{
         flex-direction: column;

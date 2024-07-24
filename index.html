@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css/style.css">
     </head>
     <body>
@@ -16,7 +17,7 @@
             <div class="main-container d-flex justify-content-between ">
                 <div class="col-7 col-lg-4 col-xl-5 col-xxl-6">
                     <div class="header-logo">
-                        <a href="#">
+                        <a href="index.html">
                             <img src="photo/site-logo.svg" alt="">
                         </a>
                     </div>
@@ -86,7 +87,7 @@ Hero section
 ++++++++++++ */ -->
     <section id="hero">
         <div class="main-container">
-            <div class="col-12 col-lg-7 col-xl-6 col-xxl-6">
+            <div class="col-12 col-lg-8 col-xl-6 col-xxl-6">
                 <form class="form">
                     <h1>
                         MOVING MADE
@@ -94,14 +95,32 @@ Hero section
                         FOR EVEYBODY!
                     </h1>
                     <P class="py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</P>
-                    <select class="round" aria-placeholder="HOME">
+                    <select class="">
                         <option>What are you moving?</option>
                         <option>No external background image</option>
                         <option>No wrapper</option>
                     </select>
                     <div class="d-flex flex-column flex-lg-row  gap-1 my-1">
-                        <input type="text" class="green" placeholder="Moving From">
-                        <input type="text" class="red" placeholder="Moving To">
+                        <div class="flex-fill green">
+                            <select class="">
+                                <option class="js-example-disabled-results">Moving From</option>
+                                <option>Landikas</option>
+                                <option>Mulababa</option>
+                                <option>Sharif abad</option>
+                                <option>Qamber</option>
+                                <option>Rahim abad</option>
+                            </select>
+                        </div>
+                        <div class="flex-fill red">
+                            <select class="">
+                                <option class="js-example-disabled-results">Moving To</option>
+                                <option>Landikas</option>
+                                <option>Mulababa</option>
+                                <option>Sharif abad</option>
+                                <option>Qamber</option>
+                                <option>Rahim abad</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="form-button pt-3">
                         <button>INSTANT PRICES</button>
@@ -122,7 +141,7 @@ Hero section
                 </div>
                 <div class="">
                     <p class="Read-more mb-0 gap-2 gap-lg-4 pe-2">
-                        Read More
+                        <a href="#">Read More</a>
                         <span class="green-line"></span>
                     </p>
                 </div>
@@ -145,7 +164,9 @@ Hero section
                 <h2>Your One Stop Solution To All Your Moving Porblems</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing sit amet, consectetur adipiscing sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                <button class="mt-3 float-start">READ MORE</button>
+                <a href="#">
+                    <button class="mt-3 float-start">READ MORE</button>
+                </a>
             </div>
         </div>
     </section>
@@ -169,7 +190,7 @@ Hero section
     <section id="services" class="position-relative">
         <div class="green-box position-absolute z-n1"></div>
         <div class="main-container">
-            <span class="small-content py-3 ">ABOUT US</span>
+            <span class="small-content py-3 ">SERVICES</span>
             <div class="services-h2 ">
                 <h2 class="h2-width">
                     Our Solutions To All
@@ -184,51 +205,68 @@ Hero section
             <div class="cards d-flex flex-column">
                 <div>
                     <div class="card-group gap-md-3 gap-lg-4 gap-xl-5 flex-column flex-md-row align-items-center justify-content-center py-5">
+                        <!-- card-1 -->
                         <div class="card">
-                            <img src="photo/chair table.jpg" class="card-img-top" alt="...">
+                            <a href="#">
+                                <img src="photo/chair table.jpg" class="card-img-top" alt="...">
+                            </a>
                             <div class="card-body d-flex flex-column px-md-3 px-4 px-lg-3">
-                                <h5 class="card-title">FURNITURE REMOVALS</h5>
+                                <h5 class="card-title">
+                                    <a href="./services.html">FURNITURE REMOVALS</a>
+                                </h5>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <a class="Read-more mb-0 gap-2 gap-lg-3 pe-3">
+                                <a href="#" class="Read-more mb-0 gap-2 gap-lg-3 pe-3">
                                     Get a Quote
                                     <span class="green-line mt-1"></span>
                                 </a>
                             </div>
                         </div>
+                        <!-- card-2 -->
                         <div class="card">
-                            <img src="photo/piano.jpg" class="card-img-top" alt="...">
+                            <a href="#">
+                                <img src="photo/piano.jpg" class="card-img-top" alt="...">
+                            </a>
                             <div class="card-body d-flex flex-column px-md-3 px-4 px-lg-3">
-                                <h5 class="card-title">PIANO REMOVALS</h5>
-                                <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
-                                <a class="Read-more mb-0 gap-2 gap-lg-3 pe-2">
+                                <h5 class="card-title">
+                                    <a href="./services.html">PIANO REMOVALS</a>
+                                </h5>
+                                <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                                <a href="#" class="Read-more mb-0 gap-2 gap-lg-3 pe-2">
                                     Get a Quote
                                     <span class="green-line mt-1"></span>
                                 </a>
                             </div>
                         </div>
+                        <!-- card-3 -->
                         <div class="card">
-                            <img src="photo/boxes.jpg" class="card-img-top" alt="...">
+                            <a href="#">
+                                <img src="photo/boxes.jpg" class="card-img-top" alt="...">
+                            </a>
                             <div class="card-body d-flex flex-column px-md-3 px-4 px-lg-3">
-                                <h5 class="card-title">PACKING SERVICES</h5>
+                                <h5 class="card-title">
+                                    <a href="./services.html">PACKING SERVICES</a>
+                                </h5>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod.</p>
-                                <a class="Read-more mb-0 gap-2 gap-lg-3 pe-2">
+                                <a href="#" class="Read-more mb-0 gap-2 gap-lg-3 pe-2">
                                     Get a Quote
                                     <span class="green-line mt-1"></span>
                                 </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class=" mx-auto">
-                <button class="ser-button">VIEW ALL</button>
+                <div class=" mx-auto">
+                    <a href="./services.html">
+                        <button class="ser-button">VIEW ALL</button>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<!--+++++++++++++
+    </section>
+    <!--+++++++++++++
     works section
     ++++++++++++-->
-<!-- <section id="work" class="">
+    <!-- <section id="work" class="">
     <div class="container-fluid ">
         <div class="main-container position-relative">
             <div class="row position-absolute  top-0">
@@ -255,203 +293,214 @@ Hero section
             </div>
     </div>
 </section> -->
-<section id="work">
-    <div class="main-container-II float-lg-end p-0">
-        <div class="row position-relative flex-column-reverse flex-lg-row">
-            <div class="col-12 col-lg-5 pe-xl-5">
-                <span class="small-content py-3 ">ABOUT US</span>
-                <div class="services-h2 ">
-                    <h2 class="h2-width">
-                        Your One Stop Solution To All Your Moving Problems
-                    </h2>
-                    <p class="text-dark ">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                             Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                   
-                    </p>
-                </div>
-            </div>
-            <div class="col-12 col-lg-7 p-0">
-                <img src="photo/family.jpg" width="100%">
-            </div>
-            <div class="reviews py-3 py-lg-2 flex-md-row">
-                <span>
-                    <h2 class="mb-0">12+</h2>
-                    <p class="m-0 ps-2">YEAR OF EXPERIENCE</p>
-                </span>
-                <span>
-                    <h2 class="mb-0">895+</h2>
-                    <p class="m-0 ps-2">YEAR OF EXPERIENCE</p>
-                </span>
-                <span>
-                    <h2 class="mb-0">900+</h2>
-                    <p class="m-0 ps-2">YEAR OF EXPERIENCE</p>
-                </span>
-            </div>
-        </div>
-    </div>
-</section>
-<!--+++++++++++++
-    TESTTIMONIALS
-    ++++++++++++-->
-<section id="testimonials">
-    <div class="main-container">
-        <span class="small-content py-3 ">ABOUT US</span>
-        <div class="testimonials-h2 ">
-            <h2 class="">
-                Our customers Love Us
-            </h2>
-            <p class="testimonials-p black--">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                         Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-            </p>
-            <div class="cards-div flex-column flex-md-row">
-                <div class="card">
-                    <p class="black--">“Lorem ipsum dolor sit amet, consectetur adipiscing sit amet, consectetur adipiscing sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
-                    <div class="img">
-                        <img src="photo/card-imge-1.png" width="90%">
+    <section id="work">
+        <div class="main-container-II float-lg-end p-0">
+            <div class="row position-relative flex-column-reverse flex-lg-row">
+                <div class="col-12 col-lg-5 pe-xl-5">
+                    <span class="small-content py-3 ">WORK</span>
+                    <div class="services-h2 ">
+                        <h2 class="h2-width">
+                            Your One Stop Solution To All Your Moving Problems
+                        </h2>
+                        <p class="text-dark ">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing sit amet, consectetur adipiscing sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                        </p>
                     </div>
-                    <h5 class="my-1">JUDE LAW</h5>
-                    <h6>BUSINESS CONSULTANT</h6>
                 </div>
-                <div class="card">
-                    <p class="black--">“Lorem ipsum dolor sit amet, consectetur adipiscing sit amet, consectetur adipiscing sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
-                    <div class="img">
-                        <img src="photo/card-img-2.png" width="90%">
-                    </div>
-                    <h5 class="my-1">BOSTON WASHINGTON</h5>
-                    <h6>LAWYER</h6>
+                <div class="col-12 col-lg-7 p-0">
+                    <img src="photo/family.jpg" width="100%">
                 </div>
-                <div class="card">
-                    <p class="black--">“Lorem ipsum dolor sit amet, consectetur adipiscing sit amet, consectetur adipiscing sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
-                    <div class="img">
-                        <img src="photo/card-img-3.png" width="90%">
-                    </div>
-                    <h5 class="my-1">CEO OF BUSINESS</h5>
-                    <h6>LAWYER</h6>
+                <div class="reviews py-3 py-lg-3 flex-md-row">
+                    <span>
+                        <h2 class="mb-0">12+</h2>
+                        <p class="m-0 ps-2">YEAR OF EXPERIENCE</p>
+                    </span>
+                    <span>
+                        <h2 class="mb-0">895+</h2>
+                        <p class="m-0 ps-2">YEAR OF EXPERIENCE</p>
+                    </span>
+                    <span>
+                        <h2 class="mb-0">900+</h2>
+                        <p class="m-0 ps-2">YEAR OF EXPERIENCE</p>
+                    </span>
                 </div>
             </div>
         </div>
     </section>
     <!--+++++++++++++
-           Footer
-        ++++++++++++-->
-    <footer id="footer">
+    TESTTIMONIALS
+    ++++++++++++-->
+    <section id="testimonials">
         <div class="main-container">
-            <!-- main-row -->
-            <div class="row row-1">
-                <!-- main-column -->
-                <div class="col-md-7 col-12 pe-md-5">
-                    <span class="small-content py-3 white--">ABOUT US</span>
-                    <div class="testimonials-h2 ">
-                        <h2 class="white--">
-                            Our customers Love Us
-                        </h2>
-                        <p class="testimonials-p ">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                        </p>
+            <span class="small-content py-3 ">TESTTIMONIALS</span>
+            <div class="testimonials-h2 ">
+                <h2 class="">
+                    Our customers Love Us
+                </h2>
+                <p class="testimonials-p black--">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                         Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                </p>
+                <div class="cards-div flex-column flex-md-row">
+                    <div class="card">
+                        <p class="black--">“Lorem ipsum dolor sit amet, consectetur adipiscing sit amet, consectetur adipiscing sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+                        <div class="img">
+                            <img src="photo/card-imge-1.png" width="90%">
+                        </div>
+                        <h5 class="my-1">JUDE LAW</h5>
+                        <h6>BUSINESS CONSULTANT</h6>
+                    </div>
+                    <div class="card">
+                        <p class="black--">“Lorem ipsum dolor sit amet, consectetur adipiscing sit amet, consectetur adipiscing sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+                        <div class="img">
+                            <img src="photo/card-img-2.png" width="90%">
+                        </div>
+                        <h5 class="my-1">BOSTON WASHINGTON</h5>
+                        <h6>LAWYER</h6>
+                    </div>
+                    <div class="card">
+                        <p class="black--">“Lorem ipsum dolor sit amet, consectetur adipiscing sit amet, consectetur adipiscing sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+                        <div class="img">
+                            <img src="photo/card-img-3.png" width="90%">
+                        </div>
+                        <h5 class="my-1">CEO OF BUSINESS</h5>
+                        <h6>LAWYER</h6>
                     </div>
                 </div>
-                <!-- main-column -->
-                <div class="col-md-5 col-12">
-                    <input type="text" placeholder="Your Email Address" class="footer-input mt-5">
-                    <button class="mt-3">SUBSCRIBE</button>
-                </div>
             </div>
-            <!-- main-row-2 -->
-            <div class="row row-2">
-                <!-- main-row-2  main-column-1 -->
-                <div class="col-md-7 col-12 ">
-                    <!-- Nested row -->
-                    <div class="row">
-                        <!-- Nested-column-->
-                        <div class="col-md-9 col-12 text-center text-md-start">
+        </section>
+        <!--+++++++++++++
+           Footer
+        ++++++++++++-->
+        <footer id="footer">
+            <div class="main-container">
+                <!-- main-row -->
+                <div class="row row-1">
+                    <!-- main-column -->
+                    <div class="col-md-7 col-xxl-6 col-12 pe-md-2">
+                        <span class="small-content py-3 white--">NEWSLETTER</span>
+                        <div class="testimonials-h2 ">
+                            <h2 class="white--">
+                                Join Our Newsletter
+                            </h2>
+                            <p class="testimonials-p pe-xxl-5">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing sit amet, consectetur adipiscing sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-1 d-none d-xxl-block"></div>
+                    <!-- main-column -->
+                    <div class="col-md-5 col-12">
+                        <input type="text" placeholder="Your Email Address" class="footer-input mt-5">
+                        <button class="mt-3">SUBSCRIBE</button>
+                    </div>
+                </div>
+                <!-- main-row-2 -->
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-4 ">
+                        <div class="text-center text-md-start">
                             <div class="footer-logo py-4  ">
                                 <img src="photo/site-logo.svg" alt="">
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing sit amet, consectetur adipiscing sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
-                        <!-- Nested-column-->
-                        <div class="col-md-3 col-12">
-                            <div class="links text-center text-md-start">
-                                <h5 class="py-md-4 pb-0 pt-5">LINKS</h5>
-                                <ul class="p-0">
-                                    <li>
-                                        <a href="index.html">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="About.html">About</a>
-                                    </li>
-                                    <li>
-                                        <a href="services.html">Services</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Contact Us</a>
-                                    </li>
-                                </ul>
-                            </div>
+                    </div>
+                    <div class="col-12 col-lg-1"></div>
+                    <div class="col-12 col-md-3 col-lg-1 p-0">
+                        <div class="links text-center text-md-start">
+                            <h5 class="py-md-3 pb-0 pt-5">LINKS</h5>
+                            <ul class="p-0">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="About.html">About</a>
+                                </li>
+                                <li>
+                                    <a href="services.html">Services</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact Us</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <!-- main-row-2  main-column-2 -->
-                <div class="col-md-5 col-12">
-                    <!-- Nested-row-->
-                    <div class="row">
-                        <!-- Nested-column-->
-                        <div class="col-md-5 col-12">
-                            <div class="links  text-center text-md-start">
-                                <h5 class="py-md-4 pb-0 pt-5">SERVICES</h5>
-                                <ul class="p-0">
-                                    <li>
-                                        <a href="index.html">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="About.html">About</a>
-                                    </li>
-                                    <li>
-                                        <a href="services.html">Services</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Contact Us</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Nested-Column-->
-                        <div class="col-md-7 col-12">
-                            <div class="links  text-center text-md-start">
-                                <h5 class="py-md-4 pb-0 pt-5">CONTACT INFO</h5>
-                                <ul class="p-0">
-                                    <li>
-                                        <a href="#">Address:  Lorem Ipsum Dolor Sit Amet Dummy Text</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Phone:  +123 4567 89</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Email:service@movable.com</a>
-                                    </li>
-                                    <div class="social-logo gap-2 d-flex align-items-sm-center justify-content-center justify-content-md-start">
-                                        <a href="#"><i class="fa-brands fa-facebook "></i></a>
-                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    </div>
-                                </ul>
-                            </div>
+                    <div class="col-1"></div>
+                    <div class=" col-12 col-md-3 col-lg-2">
+                        <div class="links  text-center text-md-start">
+                            <h5 class="py-md-3 pb-0 pt-5">SERVICES</h5>
+                            <ul class="p-0">
+                                <li>
+                                    <a href="#">Packing Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">Piano Removals</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cleaning Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">Packing Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">View More...</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
+                    <div class="col-1"></div>
+                    <div class="col-12 col-md-4 col-lg-2 p-0">
+                        <div class="links text-center text-md-start">
+                            <h5 class="py-md-3 pb-0 pt-5">CONTACT INFO</h5>
+                            <ul class="p-0">
+                                <li>
+                                    <a href="#">Address:  Lorem Ipsum Dolor Sit Amet Dummy Text</a>
+                                </li>
+                                <li>
+                                    <a href="#">Phone:  +123 4567 89</a>
+                                </li>
+                                <li>
+                                    <a href="#">Email:service@movable.com</a>
+                                </li>
+                                <div class="social-logo gap-2 d-flex align-items-sm-center justify-content-center justify-content-md-start">
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook "></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="separater white--">
+                    <div class="copywrite w-100 ">
+                        <p>
+                            Copyright to 2022 Movable. All rights reserved.
+                            <a href="#">
+                                <span>Privacy Policy</span>
+                            </a>
+                        </p>
+                    </div>
                 </div>
-                <hr class="separater white--">
-                <div class="copywrite w-100 "><p>Copyright to 2022 Movable. All rights reserved. <span>Privacy Policy</span></p></div>
             </div>
-        </div>
-    </footer>
-    <!-- script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-</body>
+        </footer>
+        <!-- script -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+        <script>$(document).ready(function() {
+        $('.red > select, .green> select').select2({
+            width:"100%",
+            
+            
+        });
+    });
+        </script>
+        <script src="script.js"></script>
+    </body>
 </html>
